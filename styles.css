@@ -1,53 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Digital Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>M Prashant</h1>
-        <p>Software Developer | Web Designer</p>
-        <p>Email: prashant.kumar@example.com | Phone: (123) 456-7890</p>
-    </header>
+/* Basic Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate software developer with over 5 years of experience in building applications for the web. Specializing in both frontend and backend development, I am dedicated to crafting clean, efficient, and functional code.</p>
-    </section>
+/* Body & Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #e2e2e2;
+    padding: 20px;
+    color: #333;
+}
 
-    <section class="experience">
-        <h2>Professional Experience</h2>
-        <article>
-            <h3>Senior Software Developer — XYZ Corp</h3>
-            <p class="dates">January 2018 - Present</p>
-            <ul>
-                <li>Lead the development of a scalable web application used by millions of users.</li>
-                <li>Implemented new features and optimized existing code to improve application performance.</li>
-                <li>Worked closely with the design team to refine user interface and user experience elements.</li>
-            </ul>
-        </article>
-        <article>
-            <h3>Software Developer — ABC Ltd</h3>
-            <p class="dates">June 2015 - December 2017</p>
-            <ul>
-                <li>Developed multiple high-traffic e-commerce websites using modern JavaScript frameworks.</li>
-                <li>Collaborated on the creation of RESTful APIs for mobile application integrations.</li>
-                <li>Conducted code reviews and mentored junior developers.</li>
-            </ul>
-        </article>
-    </section>
+/* Header */
+header {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
-    <section class="education">
-        <h2>Education</h2>
-        <p>Bachelor of Science in Computer Science</p>
-        <p class="dates">University of Technology — 2011-2015</p>
-    </section>
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
 
-    <footer>
-        <p>Find me on <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a></p>
-    </footer>
-</body>
-</html>
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Section Styling */
+section {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Experience Section */
+.experience article {
+    margin-bottom: 20px;
+}
+
+.experience h3, .education p {
+    font-weight: bold;
+}
+
+.experience ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.dates {
+    font-style: italic;
+    color: #2575fc;
+    margin-bottom: 5px;
+}
+
+/* Education Section */
+.education p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+footer a {
+    color: #50bcdf;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
